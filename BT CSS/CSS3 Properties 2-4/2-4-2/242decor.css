@@ -1,0 +1,6 @@
+.column {
+    column-count: 3;
+    column-rule: 1px solid black;
+    -webkit-column-count: 3;
+    -webkit-column-rule: 1px solid black;
+}

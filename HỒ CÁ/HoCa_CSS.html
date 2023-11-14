@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Hồ Cá CSS3</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="./assets/style/stylefish.css">
+</head>
+<body>
+
+<div id="container">
+	<audio src=""></audio>
+	<div ><img id="background_image" src="./assets/image/bg1.jpg" alt="Background"></div>
+    <div id="shark"><img src="./assets/image/shark.gif"; width="400" height="230"></div>
+	<div id="nemo"><img src="./assets/image/nemo.gif" alt="" width="200" height="150"></div>
+	<div id="bachtuot"><img src="./assets/image/octopus.gif" alt=""></div>
+	<div id="Ariel"><img src="./assets/image/tiên cá.gif" alt="" width="250" height="170"></div>
+
+	<!--Music-->
+	<select id="musicList" onchange="changeMusic()">
+        <option value="song1.mp3">Song 1</option>
+        <option value="song2.mp3">Song 2</option>
+    </select>
+	<!--
+		<button onclick="document.getElementById('background_image').src='./assets/image/bg1.jpg'">bg1</button>
+		<button onclick="document.getElementById('background_image').src='./assets/image/bg2.png'">bg2</button>
+		<button onclick="document.getElementById('background_image').src='./assets/image/bg3.png'">bg3</button>
+		-->
+		<!--Change background-->
+		<select id="mySelect" onchange="myFunction()">
+			<option value="document.getElementById('background_image').src='./assets/image/bg1.jpg'">bg1
+			<option value="document.getElementById('background_image').src='./assets/image/bg2.png'">bg2
+			<option value="document.getElementById('background_image').src='./assets/image/bg3.png'">bg3
+		</select>
+		<script>
+		function myFunction() {
+			let x = document.getElementById('mySelect').value;
+			document.getElementById('background_image').scr = x;
+		}
+		</script>
+
+
+	
+	
+	
+	<!--<button id="bg1" class="btn_change_bg">BG 1</button>
+	<button id="bg2" class="btn_change_bg">BG 2</button>
+	<button id="bg3" class="btn_change_bg">BG 3</button>-->
+</div>
+	
+<!--
+<script src="./assets/style/changebg.js"></script>
+-->
+<script src="music.js"></script>
+</body>
+</html>

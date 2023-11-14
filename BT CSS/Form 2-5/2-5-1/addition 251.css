@@ -1,0 +1,12 @@
+input.inputrange {
+    width: 80%;
+}
+/*textbox*/
+#form1 table {
+    border: 5px groove #993366;
+    background-color: #FFDDDD;
+    color: #003399;
+}
+#form1 table td {
+    border: 1px solid #CC9999;
+}

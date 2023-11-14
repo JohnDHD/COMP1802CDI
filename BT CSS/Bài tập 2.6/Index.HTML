@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>LayOut</title>
+    <style>
+        body{ margin:0px;}
+        #container{
+            width: 1000px;
+            margin:0px auto;
+            min-height: 600px;
+            background-color: #aee2f7;
+        }
+        header{
+            background-color: rgb(223, 157, 242);
+            height: 200px;
+            position: relative;
+        }
+        nav{
+            height: 60px;
+            background-color: #f3b7b7;
+            color: #fff;
+        }
+        ul li{
+            list-style-type: none;
+            display: inline-block;
+            padding: 5px 10px;
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+        li:hover{
+            text-decoration: underline;
+            background-color:rgb(79, 160, 189);
+            color: rgb(239, 79, 79);
+            border-radius: 9px;
+        }
+        #content{
+            background-color: rgb(228, 109, 165);
+            min-width: 400px;
+            width: 790px;
+            float: left;
+            padding: 5px;
+        }
+        #right{
+            background-color: rgb(61, 85, 207);
+            min-height: 400px;
+            width: 200px; float: right;
+
+        }
+        footer{
+            background-attachment: rgb(233, 168, 217);
+            color: #fff;
+            height: 30px;
+            text-align: center;
+            clear: both;
+            margin: 5px 0px 0px 0px;
+            padding: 10px 0px 0px 0px;
+        }
+        li.dropdown{display: inline-block;}
+        .dropdown-content{
+            display: none;
+            position: absolute;
+        }
+        .dropdown-content a{ text-decoration: none;}
+        .dropdown:hover .dropdown-content{display: block;}
+</style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            HEADER
+            <div style="position: absolute; top: 5px; right: 5px;">
+                <img src="https://png.pngtree.com/png-clipart/20190617/original/pngtree-cloud-cute-clouds-cute-white-clouds-cartoon-white-clouds-png-image_3882408.jpg" width="45" height="45">
+                <img src="https://png.pngtree.com/element_our/20190528/ourlarge/pngtree-cartoon-cute-cloud-emoticon-pack-image_1136189.jpg" width="45" height="45">
+                <img src="https://png.pngtree.com/png-clipart/20190117/ourlarge/pngtree-cloud-cute-clouds-cute-white-clouds-cartoon-white-clouds-png-image_418528.jpg" width="45" height="45">
+                <img src="https://png.pngtree.com/png-clipart/20190515/original/pngtree-cartoon-white-clouds-hand-drawn-cute-cartoon-clouds-cloudscute-white-cloudscartoon-png-image_4031727.jpg " width="45" height="45">
+            
+            </div>
+        </header>
+        <nav>
+            <div style="float:left">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li>
+                        <a href="#">Products</a>
+                    </li>
+                    <li><a href="#">FeedBack</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Site Map</a></li>   
+                </ul>
+            </div>
+    <div style="float: right;">
+        <img src="https://media3.giphy.com/media/Ri98Ht4Q9hczOeHC1E/giphy.gif?cid=790b7611mckurjqc5ppbnp8g85e57wobm5mccekblttuubs5&ep=v1_gifs_search&rid=giphy.gif&ct=s" width="65" height="65">
+        <img src="https://www.icegif.com/wp-content/uploads/2023/05/icegif-195.gif" width="65" height="65">
+</div>
+        </nav>
+        <div style="clear:both"></div>
+        <div id="content"> NỘI DUNG
+        </div>
+        <div id="right">MENU Phải</div>
+        <footer>
+            Bản quyền thuộc về HIENLTH&reg;.
+        </footer>
+    </div>
+</body>
+</html>

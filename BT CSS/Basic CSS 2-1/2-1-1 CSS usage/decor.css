@@ -1,0 +1,15 @@
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70px;
+    text-decoration: underline;
+}
+.Author {
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+p {
+    font-style: italic;
+    font-size: x-large;
+    color: gray;
+}
