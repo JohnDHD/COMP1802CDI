@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            margin: 0 auto;
+            width: 300px;
+        }
+
+        input {
+            width: 200px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 80px;
+            padding: 10px;
+            background-color: #0f0;
+            color: #fff;
+            border: none;
+        }
+
+        p {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ứng dụng tra cứu giá hoa quả</h1>
+    <form id="form">
+        <input type="text" id="ten_hoa_qua" placeholder="Nhập tên hoa quả">
+        <button type="button" id="xem_gia">Xem giá</button>
+    </form>
+    <p id="ket_qua"></p>
+    <script>
+        // Lấy các phần tử của form
+        var ten_hoa_qua = document.getElementById("ten_hoa_qua");
+        var xem_gia = document.getElementById("xem_gia");
+        var ket_qua = document.getElementById("ket_qua");
+
+        // Thêm sự kiện click cho nút xem giá
+        xem_gia.addEventListener("click", function() {
+            // Lấy giá trị của ô nhập tên hoa quả
+            var ten = ten_hoa_qua.value.trim().toLowerCase();
+
+            // Sử dụng switch-case để lọc điều kiện
+            switch (ten) {
+                case "ổi":
+                    ket_qua.innerHTML = " 20000 VNĐ/kg";
+                    break;
+                case "dưa hấu":
+                    ket_qua.innerHTML = " 20000 VNĐ/kg";
+                    break;
+                case "táo":
+                    ket_qua.innerHTML = " 30000 VNĐ/kg";
+                    break;
+                case "cam":
+                    ket_qua.innerHTML = " 40000 VNĐ/kg";
+                    break;
+                case "chôm chôm":
+                    ket_qua.innerHTML = " 40000 VNĐ/kg";
+                    break;
+                case "măng cụt":
+                    ket_qua.innerHTML = " 50000 VNĐ/kg";
+                    break;
+                default:
+                    ket_qua.innerHTML = "Tìm không thấy";
+            }
+        });
+    </script>
+</body>
+</html>

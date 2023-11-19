@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            margin: 0 auto;
+            width: 300px;
+        }
+
+        input {
+            width: 200px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 120px;
+            padding: 10px;
+            background-color: #0f0;
+            color: #fff;
+            border: none;
+        }
+
+        p {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ứng dụng tính số ngày trong một tháng</h1>
+    <form id="form">
+        <input type="number" id="so_thang" placeholder="Nhập số tháng trong năm" min="1" max="12">
+        <button type="button" id="tinh_so_ngay">Tính số ngày</button>
+    </form>
+    <p id="ket_qua"></p>
+    <script>
+        var so_thang = document.getElementById("so_thang");
+        var tinh_so_ngay = document.getElementById("tinh_so_ngay");
+        var ket_qua = document.getElementById("ket_qua");
+        tinh_so_ngay.addEventListener("click", function() {
+            var thang = parseInt(so_thang.value);
+            switch (thang) {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    ket_qua.innerHTML = "Tháng " + thang + " có 31 ngày";
+                    break;
+                case 2:
+                    ket_qua.innerHTML = "Tháng 2 có 28 hoặc 29 ngày";
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    ket_qua.innerHTML = "Tháng " + thang + " có 30 ngày";
+                    break;
+                default:
+                    ket_qua.innerHTML = "Số tháng không hợp lệ";
+            }
+        });
+    </script>
+</body>
+</html>
