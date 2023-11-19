@@ -6,5 +6,7 @@ Bài tập HTML: https://drive.google.com/drive/folders/1EFRhInGX5usDkCtjJTfk9Eq
 
 Bài tập CSS: https://drive.google.com/drive/folders/1XT3GXgyZ7lB_ly2o7P8elh68rX1JNrFX?usp=sharing
 
-Hồ Cá: https://johndhd.github.io/FISHTANK/
+Bài tập JAVASCRIPT: https://drive.google.com/drive/folders/1hCoOZZb_9WIt6YU-5f_aExY05WxZ103L?usp=sharing
+
+Hồ Cá: https://johndhd.github.io/COMP1802-FISHTANK/
 # COMP1802CDI
